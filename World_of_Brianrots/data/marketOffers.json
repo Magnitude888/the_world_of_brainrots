@@ -1,0 +1,106 @@
+[
+  {
+    "offerId": 1777210889420,
+    "itemName": "Tung Tung Sahur",
+    "sellerUsername": "Magnitude",
+    "price": 100000,
+    "timestamp": 1777210882753,
+    "serial": 1
+  },
+  {
+    "offerId": 1777211789934,
+    "itemName": "Glorbo Fruttodrillo",
+    "sellerUsername": "Magnitude",
+    "price": 67000,
+    "timestamp": 1777211787911,
+    "serial": 1
+  },
+  {
+    "offerId": 1777214383045,
+    "itemName": "Brr Brr Patapim",
+    "sellerUsername": "Test",
+    "price": 40000,
+    "timestamp": 1777214379654,
+    "serial": 2
+  },
+  {
+    "offerId": 1777218053565,
+    "itemName": "Lirilì Larilà",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218049602,
+    "serial": 2
+  },
+  {
+    "offerId": 1777218056033,
+    "itemName": "Noobini Pizzanini",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218052986,
+    "serial": 17
+  },
+  {
+    "offerId": 1777218062123,
+    "itemName": "Noobini Pizzanini",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218055945,
+    "serial": 16
+  },
+  {
+    "offerId": 1777218065191,
+    "itemName": "Noobini Pizzanini",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218059618,
+    "serial": 15
+  },
+  {
+    "offerId": 1777218063476,
+    "itemName": "Trulimero Trulicina",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218062409,
+    "serial": 1
+  },
+  {
+    "offerId": 1777218065215,
+    "itemName": "Gangster Footera",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218064802,
+    "serial": 2
+  },
+  {
+    "offerId": 1777218072605,
+    "itemName": "Boneca Ambalabu",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218068001,
+    "serial": 8
+  },
+  {
+    "offerId": 1777218073549,
+    "itemName": "Chef Crabracadabra",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218072395,
+    "serial": 1
+  },
+  {
+    "offerId": 1777218084672,
+    "itemName": "Tim Cheese",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218074866,
+    "serial": 8
+  },
+  {
+    "offerId": 1777218084745,
+    "itemName": "FluriFlura",
+    "sellerUsername": "Test",
+    "price": 1000,
+    "timestamp": 1777218077355,
+    "serial": 4
+  }
+]

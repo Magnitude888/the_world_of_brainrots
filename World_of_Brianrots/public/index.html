@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>World of Brainrots — Server Edition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="authContainer" class="auth-container">
+        <div class="auth-title">World of Brainrots</div>
+        <div id="loginForm">
+            <input type="text" id="loginUsername" class="auth-input" placeholder="Username" autocomplete="off">
+            <input type="password" id="loginPassword" class="auth-input" placeholder="Password">
+            <div id="loginError" class="error-msg"></div>
+            <button class="auth-btn" id="loginBtn">Login</button>
+            <div class="auth-switch">Don't have an account? <span id="showRegister">Register</span></div>
+        </div>
+        <div id="registerForm" style="display:none;">
+            <input type="text" id="regUsername" class="auth-input" placeholder="Username (3-20, a-z0-9_)">
+            <input type="password" id="regPassword" class="auth-input" placeholder="Password">
+            <input type="password" id="regConfirm" class="auth-input" placeholder="Confirm Password">
+            <div id="regError" class="error-msg"></div>
+            <button class="auth-btn" id="registerBtn">Register</button>
+            <div class="auth-switch">Already have an account? <span id="showLogin">Login</span></div>
+        </div>
+    </div>
+    <div id="appContainer" class="app" style="display:none;">
+        <div class="top-bar">
+            <div class="coin-display"><i class="fas fa-brain yellow-coin"></i> <span id="brainCoins">0</span></div>
+            <div class="user-info" id="avatarClickArea">
+                <img id="avatarImg" class="user-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%238b5cf6'/%3E%3Ctext x='50' y='67' text-anchor='middle' fill='white' font-size='40' dy='.3em'%3E😺%3C/text%3E%3C/svg%3E">
+                <span id="currentUsername" class="username-display"></span>
+                <span id="verifiedBadge" class="verified-badge" style="display: none;"><i class="fas fa-check-circle"></i></span>
+                <button id="settingsBtn" class="settings-icon"><i class="fas fa-cog"></i></button>
+            </div>
+        </div>
+        <div class="tab-bar" id="tabBar">
+            <button class="tab-btn active" data-tab="summon"><i class="fas fa-meteor"></i> Summon</button>
+            <button class="tab-btn" data-tab="inventory"><i class="fas fa-chess-board"></i> Inventory</button>
+            <button class="tab-btn" data-tab="hotbar"><i class="fas fa-bolt"></i> Hotbar</button>
+            <button class="tab-btn" data-tab="index"><i class="fas fa-scroll"></i> Index</button>
+            <button class="tab-btn" data-tab="upgrade"><i class="fas fa-arrow-up"></i> Upgrades</button>
+            <button class="tab-btn" data-tab="shop"><i class="fas fa-store"></i> Merchant</button>
+            <button class="tab-btn" data-tab="market"><i class="fas fa-chart-line"></i> Market</button>
+            <button class="tab-btn" data-tab="global"><i class="fas fa-trophy"></i> Leaderboard</button>
+            <button class="tab-btn" data-tab="chances"><i class="fas fa-chart-line"></i> Chances</button>
+        </div>
+        <div class="content">
+            <div class="tab-pane active" id="summonPane">
+                <div class="summon-center">
+                    <div class="game-title"><i class="fas fa-brain yellow-coin"></i> World of Brainrots</div>
+                    <div class="auto-delete-panel"><p><i class="fas fa-trash-alt"></i> Auto-delete rarities (multiselect):</p><div id="rarityCheckboxes" class="rarity-checkboxes"></div></div>
+                    <button class="summon-btn" id="summonBtn"><i class="fas fa-hand-sparkles"></i> SUMMON</button>
+                    <div class="cooldown-indicator" id="cdIndicator"></div>
+                    <div id="lastCardContainer" class="last-card"></div>
+                </div>
+            </div>
+            <div class="tab-pane" id="inventoryPane"><div class="section-title"><i class="fas fa-cubes"></i> Your brainrots</div><div id="inventoryGrid" class="cards-grid"></div></div>
+            <div class="tab-pane" id="hotbarPane"><div class="section-title"><i class="fas fa-bolt"></i> Hotbar slots</div><div id="hotbarSlotsContainer" class="cards-grid"></div></div>
+            <div class="tab-pane" id="indexPane"><div class="section-title"><i class="fas fa-atlas"></i> Full collection</div><div id="collectionRoot"></div></div>
+            <div class="tab-pane" id="upgradePane"><div class="section-title"><i class="fas fa-rocket"></i> Upgrades</div><div class="upgrade-grid" id="upgradeGrid"></div></div>
+            <div class="tab-pane" id="shopPane"><div class="section-title"><i class="fas fa-store"></i> Merchant — Limited offers</div><div id="shopTimer" class="shop-timer"></div><div id="shopGrid" class="shop-grid"></div></div>
+            <div class="tab-pane" id="marketPane">
+                <div class="section-title"><i class="fas fa-chart-line"></i> Global Market</div>
+                <div class="market-subtabs">
+                    <button class="market-subtab active" data-market-tab="my">My offers</button>
+                    <button class="market-subtab" data-market-tab="others">Other offers</button>
+                </div>
+                <div id="myOffersPanel">
+                    <div id="myOffersGrid" class="cards-grid"></div>
+                </div>
+                <div id="othersOffersPanel" style="display:none;">
+                    <input type="text" id="marketSearch" class="market-search" placeholder="🔍 Search by name...">
+                    <div id="othersOffersGrid" class="cards-grid"></div>
+                </div>
+            </div>
+            <div class="tab-pane" id="globalPane"><div class="section-title"><i class="fas fa-trophy"></i> Leaderboard</div><div id="leaderboardContainer" class="global-stats-list"></div></div>
+            <div class="tab-pane" id="chancesPane"><div class="glass-table"><div class="table-row" style="border-bottom:2px solid silver;"><span>Rarity</span><span>Chance</span></div><div id="chancesList"></div></div></div>
+        </div>
+    </div>
+    <div id="settingsModal" class="custom-modal">
+        <div class="modal-card">
+            <h3><i class="fas fa-user-cog"></i> Account settings</h3>
+            <p><strong>Username:</strong> <span id="modalUsername" style="color:#ffcc44;"></span></p>
+            <p><strong>Password:</strong> <span id="modalPassword" style="filter: blur(5px); cursor: pointer;" onclick="this.style.filter='none';">••••••</span></p>
+            <div><strong>Display Name:</strong> <input type="text" id="displayNameInput" placeholder="Display name"></div>
+            <div class="flex-buttons"><button id="saveSettingsBtn">Save changes</button><button id="logoutBtn">Log out</button><button id="closeModalBtn">Close</button></div>
+        </div>
+    </div>
+    <div id="sellModal" class="custom-modal">
+        <div class="modal-card">
+            <h3><i class="fas fa-tag"></i> Sell a brainrot</h3>
+            <select id="offerItemSelect"></select><input type="number" id="offerPrice" placeholder="Price in 🧠 (1 - 100,000,000,000)" min="1" max="100000000000">
+            <div class="flex-buttons"><button id="confirmOfferBtn">List for sale</button><button id="cancelOfferBtn">Cancel</button></div>
+        </div>
+    </div>
+    <script src="/client.js" type="module"></script>
+</body>
+</html>

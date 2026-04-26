@@ -1,0 +1,76 @@
+{
+  "inventory": {
+    "Boneca Ambalabu": [
+      {
+        "shiny": false,
+        "serial": 10
+      }
+    ],
+    "Brr Brr Patapim": [
+      {
+        "shiny": false,
+        "serial": 5
+      },
+      {
+        "shiny": false,
+        "serial": 6
+      }
+    ],
+    "Tung Tung Sahur": [
+      {
+        "shiny": false,
+        "serial": 12
+      }
+    ]
+  },
+  "personalExist": {
+    "Tung Tung Sahur": 10,
+    "Noobini Pizzanini": 8,
+    "Boneca Ambalabu": 9,
+    "Glorbo Fruttodrillo": 1,
+    "Brr Brr Patapim": 3,
+    "Lirilì Larilà": 1
+  },
+  "shinyCount": 0,
+  "brainCoins": 8347,
+  "cdLevel": 17,
+  "luckLevel": 0,
+  "gainLevel": 0,
+  "displayName": "Magnitude_Dev",
+  "avatar": "/icons/Default.png",
+  "autoDeleteRarities": [],
+  "verified": true,
+  "equippedSlots": [
+    {
+      "name": "Tung Tung Sahur",
+      "shiny": false,
+      "serial": 11,
+      "baseCoins": 8
+    },
+    {
+      "name": "Brr Brr Patapim",
+      "shiny": false,
+      "serial": 4,
+      "baseCoins": 15
+    },
+    {
+      "name": "Boneca Ambalabu",
+      "shiny": false,
+      "serial": 11,
+      "baseCoins": 8
+    },
+    {
+      "name": "Noobini Pizzanini",
+      "shiny": false,
+      "serial": 19,
+      "baseCoins": 5
+    },
+    {
+      "name": "Lirilì Larilà",
+      "shiny": false,
+      "serial": 3,
+      "baseCoins": 5
+    }
+  ],
+  "isAdmin": true
+}

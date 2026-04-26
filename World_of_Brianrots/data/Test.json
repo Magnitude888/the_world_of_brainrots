@@ -1,0 +1,96 @@
+{
+  "inventory": {
+    "Tung Tung Sahur": [
+      {
+        "shiny": false,
+        "serial": 9
+      }
+    ],
+    "FluriFlura": [
+      {
+        "shiny": false,
+        "serial": 5
+      }
+    ],
+    "Boneca Ambalabu": [
+      {
+        "shiny": false,
+        "serial": 9
+      }
+    ],
+    "Gangster Footera": [
+      {
+        "shiny": false,
+        "serial": 3
+      }
+    ],
+    "Noobini Pizzanini": [
+      {
+        "shiny": false,
+        "serial": 18
+      }
+    ],
+    "Trulimero Trulicina": [
+      {
+        "shiny": false,
+        "serial": 2
+      },
+      {
+        "shiny": false,
+        "serial": 3
+      }
+    ],
+    "Cappuccino Assassino": [
+      {
+        "shiny": false,
+        "serial": 1
+      }
+    ]
+  },
+  "personalExist": {
+    "Brr Brr Patapim": 2,
+    "Tim Cheese": 3,
+    "Tung Tung Sahur": 2,
+    "Lirilì Larilà": 1,
+    "Noobini Pizzanini": 5,
+    "Trulimero Trulicina": 3,
+    "Gangster Footera": 2,
+    "Boneca Ambalabu": 2,
+    "Chef Crabracadabra": 1,
+    "FluriFlura": 2,
+    "Cappuccino Assassino": 1
+  },
+  "shinyCount": 1,
+  "brainCoins": 25247,
+  "cdLevel": 0,
+  "luckLevel": 0,
+  "gainLevel": 0,
+  "displayName": "PPAP",
+  "avatar": "/icons/Default.png",
+  "autoDeleteRarities": [],
+  "verified": false,
+  "equippedSlots": [
+    {
+      "name": "Tim Cheese",
+      "shiny": false,
+      "serial": 7,
+      "baseCoins": 5
+    },
+    {
+      "name": "Tung Tung Sahur",
+      "shiny": false,
+      "serial": 8,
+      "baseCoins": 8
+    },
+    {
+      "name": "Noobini Pizzanini",
+      "shiny": false,
+      "serial": 14,
+      "baseCoins": 5
+    },
+    null,
+    null
+  ],
+  "lastIncomeTime": 1777224374420,
+  "isAdmin": false
+}

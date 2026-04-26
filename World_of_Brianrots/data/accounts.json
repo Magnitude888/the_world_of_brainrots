@@ -1,0 +1,10 @@
+{
+  "Magnitude": {
+    "password": "$2b$10$6pFMyTgPPZxQESb8/a05Neb5JyUXp.ZxA.aMSAQvYoUhvUQgxpwU.",
+    "verified": false
+  },
+  "Test": {
+    "password": "$2b$10$qYQMB2rYPvNYwkOvPzOTKuJ9FZKmrCI7GppR3Fq2aHz.KDV1dViR.",
+    "verified": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "name": "Ballerina Cappuccina",
+      "price": 423,
+      "icon": "fa-shoe-prints",
+      "rarity": {
+        "name": "Legendary",
+        "baseChance": 1,
+        "color": "#f5b559",
+        "gradient": "linear-gradient(145deg,#fcd98a,#f09a2c)",
+        "icon": "fa-crown",
+        "baseCoins": 25,
+        "rank": 3,
+        "value": 25
+      }
+    },
+    {
+      "name": "Blackhole Goat",
+      "price": 3771,
+      "icon": "fa-black-hole",
+      "rarity": {
+        "name": "Limited",
+        "baseChance": 0.84,
+        "color": "#c6ff73",
+        "gradient": "linear-gradient(145deg,#dcff9e,#a6dc46)",
+        "icon": "fa-hourglass-half",
+        "baseCoins": 250,
+        "rank": 7,
+        "value": 250
+      }
+    },
+    {
+      "name": "Brr Brr Patapim",
+      "price": 269,
+      "icon": "fa-snowflake",
+      "rarity": {
+        "name": "Epic",
+        "baseChance": 15,
+        "color": "#d16bff",
+        "gradient": "linear-gradient(145deg,#e598ff,#aa46f0)",
+        "icon": "fa-gem",
+        "baseCoins": 15,
+        "rank": 2,
+        "value": 15
+      }
+    }
+  ],
+  "resetTime": 1777226055259
+}

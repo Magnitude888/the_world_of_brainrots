@@ -1,0 +1,41 @@
+export const RARITIES = [
+  { name: "Common", baseChance: 40.0, color: "#bcbcbc", gradient: "linear-gradient(145deg,#dbdbdb,#a0a0a0)", icon: "fa-shield-alt", baseCoins: 5, rank: 0, value: 5 },
+  { name: "Uncommon", baseChance: 28.0, color: "#6fcf97", gradient: "linear-gradient(145deg,#90e0b0,#2f9e5a)", icon: "fa-leaf", baseCoins: 8, rank: 1, value: 8 },
+  { name: "Epic", baseChance: 15.0, color: "#d16bff", gradient: "linear-gradient(145deg,#e598ff,#aa46f0)", icon: "fa-gem", baseCoins: 15, rank: 2, value: 15 },
+  { name: "Legendary", baseChance: 1.0, color: "#f5b559", gradient: "linear-gradient(145deg,#fcd98a,#f09a2c)", icon: "fa-crown", baseCoins: 25, rank: 3, value: 25 },
+  { name: "Exotic", baseChance: 0.1, color: "#ff6ad5", gradient: "linear-gradient(145deg,#ff99e6,#e63eaa)", icon: "fa-star-of-life", baseCoins: 50, rank: 4, value: 50 },
+  { name: "Secret", baseChance: 0.05, color: "#4bc5cf", gradient: "linear-gradient(145deg,#78e2f0,#1f95a3)", icon: "fa-mask", baseCoins: 200, rank: 5, value: 200 },
+  { name: "Sacred", baseChance: 0.01, color: "#ffffff", gradient: "linear-gradient(145deg,#2a2a2a,#000000)", icon: "fa-eye", baseCoins: 500, rank: 6, value: 500 },
+  { name: "Limited", baseChance: 0.84, color: "#c6ff73", gradient: "linear-gradient(145deg,#dcff9e,#a6dc46)", icon: "fa-hourglass-half", baseCoins: 250, rank: 7, value: 250 },
+  { name: "Apex", baseChance: 0.001, color: "#ff66cc", gradient: "linear-gradient(145deg,#ff99ff,#cc44cc)", icon: "fa-dragon", baseCoins: 1500, rank: 8, value: 1500 }
+];
+
+export const BRAINROTS = [
+  { name: "Noobini Pizzanini", rarity: RARITIES[0], icon: "fa-pizza-slice", customImage: null },
+  { name: "Lirilì Larilà", rarity: RARITIES[0], icon: "fa-music", customImage: null },
+  { name: "Tim Cheese", rarity: RARITIES[0], icon: "fa-cheese", customImage: null },
+  { name: "FluriFlura", rarity: RARITIES[0], icon: "fa-feather-alt", customImage: null },
+  { name: "Tung Tung Sahur", rarity: RARITIES[1], icon: "fa-drumstick-bite", customImage: "/icons/tung-tung.png" },
+  { name: "Gangster Footera", rarity: RARITIES[1], icon: "fa-user-secret", customImage: null },
+  { name: "Boneca Ambalabu", rarity: RARITIES[1], icon: "fa-doll", customImage: null },
+  { name: "Cappuccino Assassino", rarity: RARITIES[2], icon: "fa-mug-hot", customImage: null },
+  { name: "Brr Brr Patapim", rarity: RARITIES[2], icon: "fa-snowflake", customImage: null },
+  { name: "Trulimero Trulicina", rarity: RARITIES[2], icon: "fa-magic", customImage: null },
+  { name: "Ballerina Cappuccina", rarity: RARITIES[3], icon: "fa-shoe-prints", customImage: null },
+  { name: "Chef Crabracadabra", rarity: RARITIES[3], icon: "fa-hat-wizard", customImage: null },
+  { name: "Glorbo Fruttodrillo", rarity: RARITIES[3], icon: "fa-apple-alt", customImage: null },
+  { name: "Bombardiro Crocodilo", rarity: RARITIES[4], icon: "fa-bomb", customImage: null },
+  { name: "Orangutini Ananassini", rarity: RARITIES[4], icon: "fa-pineapple", customImage: null },
+  { name: "Avocadorilla", rarity: RARITIES[4], icon: "fa-seedling", customImage: null },
+  { name: "La Vacca Saturno", rarity: RARITIES[5], icon: "fa-cow", customImage: null },
+  { name: "Bisonte Giuppitere", rarity: RARITIES[5], icon: "fa-bison", customImage: null },
+  { name: "Strawberry Elephant", rarity: RARITIES[6], icon: "fa-strawberry", customImage: null },
+  { name: "Agent 67", rarity: RARITIES[6], icon: "fa-id-card", customImage: null },
+  { name: "Tralalero Tralala", rarity: RARITIES[6], icon: "fa-microphone-alt", customImage: null },
+  { name: "Gattatino Nyanino", rarity: RARITIES[7], icon: "fa-cat", customImage: null },
+  { name: "Espresso Signora", rarity: RARITIES[7], icon: "fa-coffee", customImage: null },
+  { name: "Blackhole Goat", rarity: RARITIES[7], icon: "fa-black-hole", customImage: null },
+  { name: "Aurora Core", rarity: RARITIES[8], icon: "fa-sun", customImage: null },
+  { name: "Nebula Brain", rarity: RARITIES[8], icon: "fa-cloud-moon", customImage: null },
+  { name: "Stardust Eater", rarity: RARITIES[8], icon: "fa-star", customImage: null }
+];
