@@ -1,7 +1,7 @@
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import session from 'express-session';
 import { fileURLToPath } from 'url';
 import { RARITIES, BRAINROTS } from './brainrots.js';
